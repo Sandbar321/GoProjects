@@ -7,10 +7,10 @@ import (
 
 func TestGreet(t *testing.T) {
 	buffer := bytes.Buffer{}
-	Greet(&buffer, "David")
+	Greet(&buffer, "Josh")
 
 	got := buffer.String()
-	want := "Hello, David"
+	want := "Hello, Josh"
 
 	if got != want {
 		t.Errorf("got %q want %q", got, want)
